@@ -14,6 +14,7 @@
 .nav-bar {
   margin: 0;
   background: $brand-blue;
+  height: 7rem;
 }
 
 .nav-bar__top {
@@ -31,12 +32,14 @@
 .nav-bar__tabs {
   display: flex;
   justify-content: space-between;
+  margin-top: -1rem;
   margin-right: 3rem;
 }
 
 .nav-bar__selection {
   color: $title-white;
 }
+
 .nav-bar__new-list {
   color: $title-white;
 }
