@@ -1,0 +1,13 @@
+@import 'project-variables';
+
+.new-container {
+  display: flex;
+}
+
+.new-form {
+  border: 1px solid black;
+}
+
+.new-list__input {
+  border-bottom: 1px solid $placeholder-text;
+}

@@ -1,7 +1,7 @@
 <div class="new-container">
   <h3 class="new__title">Add New List</h3>
 
-  <form {{action saveList model on="submit"}} class="new-form">
+  <form {{action "saveList" model on="submit"}} class="new-form">
     {{input class="new-list__input" type="form" placeholder="List Name" value=model.title}}
     <button class="new__submit">ACCEPT</button>
 

@@ -1,4 +1,5 @@
 @import 'project-variables';
+@import 'new';
 @import 'yoga';
 
 // Uncomment this for working with yoga prototyping
@@ -9,6 +10,10 @@
   font-family: Roboto;
   font-size: 14px;
   line-height: 2.14rem;
+}
+
+body {
+  margin: 0;
 }
 
 .nav-bar {
