@@ -1,18 +1,16 @@
-<div class="nav-bottom">
-  <ul class="nav-list">
-    {{#each model as |todo|}}
-      <li class="nav-list__item">
-        {{#link-to "list.detail" todo.id}}
-        {{todo.title}}
-        {{/link-to}}
-      </li>
+<nav>
+  <div class="list-list">
+    <ul class="sub-nav-list">
+      {{#each model as |list|}}
+
+        <li class="sub-navbar-links">{{#link-to "list.reminders" list}}{{list.title}}{{/link-to}}
+
+        </li>
+
       {{/each}}
-  </ul>
-    <div class="nav-list__item add-new">
-      {{#link-to "list.new"}}
-      Add New List
-      {{/link-to}}
-    </div>
-</div>
+    </ul>
+    {{#link-to "list.new"}}<p class="sub-navbar-links">NEW LIST</p>{{/link-to}}
+  </div>
+</nav>
 
 {{outlet}}
