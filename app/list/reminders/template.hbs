@@ -1,0 +1,17 @@
+<h2 class="reminder-heading">{{model.title}}</h2>
+
+
+<ul class="reminder-list">
+  {{#each model.reminders as |reminder|}}
+    <li class="reminder-list-item" {{action markDone reminder reminder.done on="click" preventDefault=false }}>{{input type="checkbox"}}{{reminder.name}}</li>
+  {{/each}}
+
+  <button {{action deleteList model on="click"}}>Delete This List</button>
+</ul>
+<form class="new-form" {{action saveReminder model name on="submit"}}>
+  <div class="input-container">
+    {{input class="new-input" placeholder="What do you want to do?" type="text" value=name}}
+
+    <button class="save-list">Accept</button>
+  </div>
+</form>
