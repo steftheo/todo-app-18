@@ -6,11 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('list', {path: '/'}, function() {
-    this.route('new');
-    this.route('reminders');
+  this.route('lists', {path: '/'}, function() {
+    this.route('new', { path: `/new-list` });
+    this.route('reminders', { path: `/:id/reminders` });
   });
-  this.route('new-list');
+  // this.route('new-list');
 });
 
 export default Router;
