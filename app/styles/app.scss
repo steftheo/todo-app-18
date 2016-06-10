@@ -1,0 +1,115 @@
+@import 'yoga';
+
+// Uncomment this for working with yoga prototyping
+// http://rtablada.github.io/yoga-sass/#mixin-yoga-prototype
+// @include yoga-prototype();
+
+$brand-blue: #00bbd3;
+$brand-yellow: #ffff8c;
+$title-white: #fff;
+$regular-text: #1c1c1c;
+$placeholder-text: rgba(0, 0, 0, 0.38);
+
+
+* {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 2.14rem;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+}
+
+nav {
+  min-width: 100%;
+  background: #00bbd3;
+  color: #fff;
+}
+
+.topnav {
+  display: flex;
+}
+
+.hamburger {
+  margin: 1rem;
+}
+
+.list-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: auto;
+  margin: auto;
+}
+
+.sub-nav-list {
+  width: 100%;
+  // margin-left: 3rem;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+
+  &::-webkit-scrollbar {
+    display: none;
+  };
+
+}
+
+.sub-navbar-links {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+
+}
+
+a {
+  min-width: 25%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: $title-white;
+
+  &:hover {
+    border-bottom: 3px solid $brand-yellow;
+  }
+}
+
+.container {
+ width: 75%;
+ margin: auto;
+ color: $regular-text;
+}
+
+.new-form {
+  padding: 1rem;
+  box-shadow: 0.3rem 0.3rem 2rem $regular-text;
+}
+
+.new-input {
+  width: 100%;
+  margin-top: 1rem;
+  border: 0;
+  border-bottom: 1px solid $placeholder-text;
+  outline: none;
+  color: $placeholder-text;
+  font-size: 1rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-list {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  border: 0;
+  background: none;
+  color: $brand-blue;
+  font-size: 1rem;
+  cursor: pointer;
+}

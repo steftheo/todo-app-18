@@ -1,0 +1,9 @@
+<div class="new-form-wrap">
+<h2>New List</h2>
+<form {{action saveList model on="submit"}} class="new-form">
+  <div class="input-container">
+  {{input class="new-input" type="text" placeholder="New List" value=model.title}}
+  <button class="save-list">Save</button>
+  </div>
+</form>
+</div>
