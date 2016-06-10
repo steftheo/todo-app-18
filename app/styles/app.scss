@@ -1,10 +1,15 @@
-@import 'project-variables';
-@import 'new';
 @import 'yoga';
 
 // Uncomment this for working with yoga prototyping
 // http://rtablada.github.io/yoga-sass/#mixin-yoga-prototype
 // @include yoga-prototype();
+
+$brand-blue: #00bbd3;
+$brand-yellow: #ffff8c;
+$title-white: #fff;
+$regular-text: #1c1c1c;
+$placeholder-text: rgba(0, 0, 0, 0.38);
+
 
 * {
   font-family: Roboto;
@@ -24,8 +29,7 @@ nav {
 }
 
 .topnav {
-  display:flex;
-
+  display: flex;
 }
 
 .hamburger {
@@ -51,7 +55,6 @@ nav {
     display: none;
   };
 
-
 }
 
 .sub-navbar-links {
@@ -59,6 +62,10 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
+
+  &:hover {
+    border-bottom: 3px solid $brand-yellow;
+  }
 }
 
 a {
@@ -66,12 +73,7 @@ a {
   display: flex;
   justify-content: center;
   text-decoration: none;
-
-
-  &:hover {
-
-    border-bottom: 3px solid yellow;
-  }
+  color: $title-white;
 
 }
 
@@ -79,10 +81,6 @@ a {
  width: 75%;
  margin: auto;
  color: $regular-text;
-}
-
-.new-list-heading {
-
 }
 
 .new-form {
